@@ -11,12 +11,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'populator', '~> 1.0'
-gem 'faker', '~> 1.5'
-gem 'pry', '~> 0.10.3', group: :development 
-gem 'pry-byebug', '~> 3.3', group: :development 
+
+group :development, :test do
+ 	gem 'populator', '~> 1.0'
+	gem 'faker', '~> 1.5'
+	gem 'pry', '~> 0.10.3'
+	gem 'pry-byebug', '~> 3.3'
+end
+
 gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-
-
-
